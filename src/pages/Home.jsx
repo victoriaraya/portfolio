@@ -11,12 +11,16 @@ const Home = () => {
       </video>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
         <h1 className="text-5xl font-black [text-shadow:2px_2px_2px_black]">
-          {"Hello, my name is Victoria Raya :)"}
+          Hello, my name is Victoria Raya
         </h1>
         <h3 className="text-3xl mt-5 [text-shadow:2px_2px_2px_black]">
-          I'm the creative, hardworking and positive software engineer of your
+          I'm the creative, hardworking, positive software engineer of your
           dreams!
         </h3>
+        <h2 className="text-4xl mt-5 [text-shadow:2px_2px_2px_black]">♡</h2>
+      </div>
+      <div className="absolute inset-0 flex justify-center self-end p-1 text-[22px] text-white font-semibold [text-shadow:2px_2px_2px_black]">
+        Made by Victoria Raya
       </div>
     </div>
   );
