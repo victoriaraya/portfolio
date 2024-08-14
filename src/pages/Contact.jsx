@@ -1,6 +1,14 @@
 const Contact = () => {
   return (
     <div className="h-screen w-full relative">
+      {/* <video
+        className="absolute top-0 left-0 w-[50%] h-full object-cover"
+        autoPlay
+        muted
+        loop
+      >
+        <source src="/images/flowers.mp4" type="video/mp4" />
+      </video> */}
       <img
         src="./images/orchid_pic_slice.png"
         alt="orchids"
