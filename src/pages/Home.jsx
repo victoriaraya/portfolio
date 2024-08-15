@@ -10,7 +10,7 @@ const Home = () => {
         <source src="/images/orchids.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h1 className="text-4xl text-center sm:text-5xl font-black px-0.5 sm:px-0 [text-shadow:2px_2px_2px_black]">
+        <h1 className="text-4xl text-center sm:text-5xl font-black px-1 sm:px-0 [text-shadow:2px_2px_2px_black]">
           Hello, my name is Victoria Raya
         </h1>
         <h3 className="text-2xl text-center sm:text-3xl mt-3 sm:mt-5 px-2 sm:px-0 [text-shadow:2px_2px_2px_black]">

@@ -1,21 +1,8 @@
 const Contact = () => {
   return (
-    <div className="h-screen w-full relative">
-      {/* <video
-        className="absolute top-0 left-0 w-[50%] h-full object-cover"
-        autoPlay
-        muted
-        loop
-      >
-        <source src="/images/flowers.mp4" type="video/mp4" />
-      </video> */}
-      <img
-        src="./images/orchid_pic_slice.png"
-        alt="orchids"
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      />
-      <div className="flex h-full w-full">
-        <div className="absolute flex flex-col justify-start pl-20 self-center text-3xl w-96 z-20">
+    <div className="h-screen w-screen mt-0 sm:pt-14 bg-[#b291a4]">
+      <div className="flex flex-col sm:flex-row gap-5 h-full w-full">
+        <div className="flex flex-col justify-start text-center sm:text-start pt-6 sm:pt-0 px-8 sm:px-0 sm:pl-20 self-center text-white [text-shadow:1px_1px_2px_black] text-3xl w-full sm:w-[400px] sm:animate-slide-right-delay">
           <p className="w-full">
             Feel free to email me at{" "}
             <a href="mailto:victoriaraya111@gmail.com">
@@ -23,9 +10,8 @@ const Contact = () => {
             </a>{" "}
             or fill out the contact form here
           </p>
-          <p>☺︎</p>
         </div>
-        <div className="absolute inset-0 flex justify-end pr-20 pt-4 font-gruppo">
+        <div className="flex justify-center sm:justify-end sm:pl-40 sm:pt-3 font-gruppo sm:animate-slide-left">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSe63cxuBDykG4HpceyeBNRvYYaBUptjsvzAaRHgXl2eNCZZdw/viewform?embedded=true"
             width="640"

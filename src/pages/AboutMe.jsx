@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="h-screen w-full mt-0 sm:mt-16 text-white">
+    <div className="h-screen w-full pt-0 sm:pt-16 text-white">
       <p className="p-2">
         I'm a creative & hardworking developer who loves to write code. I'm
         eager to start my career somewhere I can grow and contribute positively!
