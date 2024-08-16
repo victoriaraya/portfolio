@@ -19,6 +19,7 @@ module.exports = {
       animation: {
         "slide-left": "slideLeft 2s ease-in-out forwards",
         "slide-right-delay": "slideRight 2s ease-in-out forwards .25s",
+        "spin-slow": "spin 23s linear infinite",
       },
     },
   },
