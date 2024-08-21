@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Expertise from "./pages/Expertise";
 import Projects from "./pages/Projects";
+import ProjectDetails from "./pages/ProjectDetails";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:name" element={<ProjectDetails />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/not-found" element={<NotFound />} />

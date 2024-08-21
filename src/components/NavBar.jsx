@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GoSun, GoMoon } from "react-icons/go";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +19,14 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="text-2xl" />
+            <FaGithub className="text-2xl sm:hover:pt-1" />
           </a>
           <a
             href="https://www.linkedin.com/in/victoria-raya-05a68b29a/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-2xl" />
+            <FaLinkedin className="text-2xl sm:hover:pt-1" />
           </a>
         </div>
         <button
@@ -33,6 +34,10 @@ const NavBar = () => {
           onClick={toggleMenu}
         >
           ☰
+        </button>
+
+        <button className="z-20 text-2xl sm:pr-4 sm:pt-4 sm:hover:text-xl">
+          <GoMoon />
         </button>
       </div>
 
