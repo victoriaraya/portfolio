@@ -19,14 +19,14 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="text-2xl sm:hover:pt-1" />
+            <FaGithub className="text-2xl transition-all duration-200 ease-in-out transform hover:scale-90" />
           </a>
           <a
             href="https://www.linkedin.com/in/victoria-raya-05a68b29a/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-2xl sm:hover:pt-1" />
+            <FaLinkedin className="text-2xl transition-all duration-200 ease-in-out transform hover:scale-90" />
           </a>
         </div>
         <button
@@ -36,7 +36,7 @@ const NavBar = () => {
           ☰
         </button>
 
-        <button className="z-20 text-2xl sm:pr-4 sm:pt-4 sm:hover:text-xl">
+        <button className="z-20 text-2xl sm:pr-4 sm:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90">
           <GoMoon />
         </button>
       </div>
