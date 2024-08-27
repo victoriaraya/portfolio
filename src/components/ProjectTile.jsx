@@ -6,18 +6,18 @@ const ProjectTile = (props) => {
   return (
     <div className="relative text-white group">
       <Link to={`/projects/${project.name}`}>
-        {project.imageUrl.includes("mp4") ? (
+        {project.images[0].includes("mp4") ? (
           <video
             autoPlay
             muted
             loop
             className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60"
           >
-            <source src={`/images/${project.imageUrl}`} type="video/mp4" />
+            <source src={`/images/${project.images[0]}`} type="video/mp4" />
           </video>
         ) : (
           <img
-            src={`/images/${project.imageUrl}`}
+            src={`/images/${project.images[0]}`}
             alt={`${project.name}`}
             className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60"
           />
