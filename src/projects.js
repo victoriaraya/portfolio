@@ -47,7 +47,7 @@ const ProjectList = [
   },
 
   {
-    name: "Autonomous Email Deleter",
+    name: "Email Deleter",
     description:
       "This Node.js script uses node-imap to delete emails from specific senders via IMAP. Inspired by the numerous spam emails I receive daily, I wanted to automate the process of deleting these unwanted messages without risking exposure to malicious links. Setting up a cron job to run this script twice daily has saved me from the tedious task of manually deleting over 20 emails each day. Through this project, I gained valuable experience with IMAP, asynchronous task management, and configuring cron jobs, including handling environment variables and permissions.",
     images: ["email.jpg"],

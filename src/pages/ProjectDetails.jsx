@@ -12,16 +12,68 @@ const ProjectDetails = () => {
 
   return (
     <div className="min-h-screen w-screen mt-0 sm:pt-9 px-4 sm:px-6 bg-[#b291a4] text-white text-lg sm:text-2xl flex flex-col">
-      <p className="flex justify-end z-20 sm:-mt-3">
+      <p className="flex justify-end z-20 mb-1 sm:-mt-4 -mr-2 sm:-mr-3">
         <Link to="/projects" className="hover:[text-shadow:1px_1px_3px_white]">
           Go back
         </Link>
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-4 sm:gap-0">
-        <h1 className="col-span-1 sm:col-span-2 text-5xl sm:text-8xl -mt-4 sm:-mt-6">
-          {project.name}
-        </h1>
-        <p className="justify-start row-start-2 -mt-32 sm:-mt-4">
+      <div className="relative flex flex-col sm:grid sm:grid-cols-2 sm:grid-rows-[0.5fr_0.5fr_1fr] gap-2">
+        <div className="relative flex flex-col items-center justify-center sm:col-span-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            xmlns:svgjs="http://svgjs.dev/svgjs"
+            viewBox="0 0 800 800"
+            width="600"
+            height="600"
+            opacity="1"
+            className="absolute mt-64 sm:mt-32"
+          >
+            <g
+              strokeWidth="2"
+              stroke="hsla(0, 0%, 100%, 1.00)"
+              fill="none"
+              strokeLinecap="round"
+              transform="matrix(1,0,0,1,-5,349.4602737426758)"
+            >
+              <path d="M10,10C31.726190476190478,12.083333333333334,68.75,26.458333333333336,114.28571428571429,20C159.82142857142858,13.541666666666666,180.95238095238096,-21.833333333333332,228.57142857142858,-21C276.1904761904762,-20.166666666666668,295.2380952380953,20.25,342.8571428571429,24C390.4761904761905,27.75,409.5238095238095,-5.916666666666667,457.14285714285717,-3C504.7619047619048,-0.08333333333333304,523.8095238095239,40.291666666666664,571.4285714285714,38C619.047619047619,35.708333333333336,638.0952380952382,-13.166666666666666,685.7142857142858,-14C733.3333333333334,-14.833333333333334,776.1904761904761,24,800,34"></path>
+              <path
+                d="M10,10C31.726190476190478,12.083333333333334,68.75,26.458333333333336,114.28571428571429,20C159.82142857142858,13.541666666666666,180.95238095238096,-21.833333333333332,228.57142857142858,-21C276.1904761904762,-20.166666666666668,295.2380952380953,20.25,342.8571428571429,24C390.4761904761905,27.75,409.5238095238095,-5.916666666666667,457.14285714285717,-3C504.7619047619048,-0.08333333333333304,523.8095238095239,40.291666666666664,571.4285714285714,38C619.047619047619,35.708333333333336,638.0952380952382,-13.166666666666666,685.7142857142858,-14C733.3333333333334,-14.833333333333334,776.1904761904761,24,800,34"
+                transform="matrix(1,0,0,1,0,28)"
+              ></path>
+              <path
+                d="M10,10C31.726190476190478,12.083333333333334,68.75,26.458333333333336,114.28571428571429,20C159.82142857142858,13.541666666666666,180.95238095238096,-21.833333333333332,228.57142857142858,-21C276.1904761904762,-20.166666666666668,295.2380952380953,20.25,342.8571428571429,24C390.4761904761905,27.75,409.5238095238095,-5.916666666666667,457.14285714285717,-3C504.7619047619048,-0.08333333333333304,523.8095238095239,40.291666666666664,571.4285714285714,38C619.047619047619,35.708333333333336,638.0952380952382,-13.166666666666666,685.7142857142858,-14C733.3333333333334,-14.833333333333334,776.1904761904761,24,800,34"
+                transform="matrix(1,0,0,1,0,14)"
+              ></path>
+            </g>
+            <defs>
+              <linearGradient
+                gradientTransform="rotate(270)"
+                x1="50%"
+                y1="0%"
+                x2="50%"
+                y2="100%"
+                id="sssquiggly-grad"
+              >
+                <stop
+                  stopColor="hsl(206, 75%, 49%)"
+                  stopOpacity="1"
+                  offset="0%"
+                ></stop>
+                <stop
+                  stopColor="hsl(331, 90%, 56%)"
+                  stopOpacity="1"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <h1 className="absolute text-5xl text-center sm:text-8xl mt-14 sm:-mt-24 [text-shadow:2px_2px_3px_black]">
+            {project.name}
+          </h1>
+        </div>
+        <p className="justify-self-end pr-8 pt-8">
           <a
             href={`${project.url}`}
             target="_blank"
@@ -32,7 +84,7 @@ const ProjectDetails = () => {
             {project.url.includes("github") ? "See code" : "See website"}
           </a>
         </p>
-        <div className="row-start-3 flex flex-col -mt-10 sm:-mt-20 mr-0 sm:mr-5">
+        <div className="flex flex-col w-3/4 pt-8">
           <span className="pb-2">Tools used:</span>
           <span className="flex flex-wrap gap-2 sm:gap-3">
             {project.technologies.map((tech) => (
@@ -45,11 +97,11 @@ const ProjectDetails = () => {
             ))}
           </span>
         </div>
-        <p className="row-span-2 text-left px-0 sm:px-2 -mt-6 sm:-mt-10">
+        <p className="col-span-2 text-left p-3 shadow-[1px_1px_7px_7px_white] rounded-xl mt-8">
           {project.description}
         </p>
       </div>
-      <div className="flex flex-wrap gap-4 pt-8 pb-3 px-2 sm:px-5">
+      <div className="flex flex-wrap gap-4 pt-12 pb-3 px-2 sm:px-5">
         {project.images[0].includes("jpg")
           ? null
           : project.images.map((image, idx) =>
