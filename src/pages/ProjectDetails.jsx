@@ -38,7 +38,7 @@ const ProjectDetails = () => {
             width="600"
             height="600"
             opacity="1"
-            className="absolute mt-40 sm:mt-32 w-3/4"
+            className="absolute mt-44 sm:mt-32 w-3/4"
           >
             <g
               strokeWidth="2"
@@ -100,7 +100,7 @@ const ProjectDetails = () => {
           {project.description}
         </p>
       </div>
-      <div className="flex flex-wrap gap-4 pt-10 sm:pt-14 pb-3 px-2 sm:px-5">
+      <div className="flex flex-wrap gap-4 pt-10 sm:pt-14 pb-3 sm:px-5">
         {project.images[0].includes("jpg")
           ? null
           : project.images.map((image, idx) =>
