@@ -12,10 +12,20 @@ const ProjectDetails = () => {
 
   return (
     <div className="min-h-screen w-screen mt-0 sm:pt-9 px-4 sm:px-6 bg-[#b291a4] text-white text-lg sm:text-2xl flex flex-col">
-      <p className="flex justify-end z-20 mb-1 sm:-mt-4 -mr-2 sm:-mr-3">
+      <p className="flex justify-between z-10 mb-1 sm:-mt-3 -ml-2 sm:-ml-3">
         <Link to="/projects" className="hover:[text-shadow:1px_1px_3px_white]">
           Go back
         </Link>
+
+        <a
+          href={`${project.url}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative inline-flex items-center gap-1 -mr-2 sm:-mr-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+        >
+          <GoArrowUpRight className="text-lg sm:text-xl" />
+          {project.url.includes("github") ? "See code" : "See website"}
+        </a>
       </p>
       <div className="relative flex flex-col sm:grid sm:grid-cols-2 sm:grid-rows-[0.5fr_0.5fr_1fr] gap-2">
         <div className="relative flex flex-col items-center justify-center sm:col-span-2">
@@ -28,7 +38,7 @@ const ProjectDetails = () => {
             width="600"
             height="600"
             opacity="1"
-            className="absolute mt-64 sm:mt-32"
+            className="absolute mt-40 sm:mt-32 w-3/4"
           >
             <g
               strokeWidth="2"
@@ -73,20 +83,9 @@ const ProjectDetails = () => {
             {project.name}
           </h1>
         </div>
-        <p className="justify-self-end pr-8 pt-8">
-          <a
-            href={`${project.url}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative inline-flex items-center gap-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
-          >
-            <GoArrowUpRight className="text-lg sm:text-xl" />
-            {project.url.includes("github") ? "See code" : "See website"}
-          </a>
-        </p>
-        <div className="flex flex-col w-3/4 pt-8">
+        <div className="flex flex-col pt-24 sm:pt-10 items-center sm:col-span-2 pb-3 sm:pb-5">
           <span className="pb-2">Tools used:</span>
-          <span className="flex flex-wrap gap-2 sm:gap-3">
+          <span className="flex flex-wrap gap-2 sm:gap-3 justify-center">
             {project.technologies.map((tech) => (
               <span
                 className="bg-slate-300 bg-opacity-35 rounded-md p-1"
@@ -97,11 +96,11 @@ const ProjectDetails = () => {
             ))}
           </span>
         </div>
-        <p className="col-span-2 text-left p-3 shadow-[1px_1px_7px_7px_white] rounded-xl mt-8">
+        <p className="col-span-2 p-3 shadow-[1px_1px_7px_7px_white] rounded-xl mt-8 mx-2 sm:mx-10 text-center">
           {project.description}
         </p>
       </div>
-      <div className="flex flex-wrap gap-4 pt-12 pb-3 px-2 sm:px-5">
+      <div className="flex flex-wrap gap-4 pt-10 sm:pt-14 pb-3 px-2 sm:px-5">
         {project.images[0].includes("jpg")
           ? null
           : project.images.map((image, idx) =>

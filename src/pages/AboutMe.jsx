@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <div className="min-h-screen w-full pt-0 sm:pt-6 text-white grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
-      <p className="order-2 sm:order-1 px-3 pb-2 sm:p-2 sm:pl-16 sm:pt-16 text-[23px] justify-self-center text-center">
+      <p className="order-2 sm:order-1 pb-2 p-2 sm:p-20 sm:pl-16 sm:pt-20 text-[23px] justify-self-center text-center sm:shadow-[5px_5px_5px_white] sm:-mt-4 sm:-mr-4">
         I'm a self-taught developer from California. After years of teaching
         English online while living a nomadic lifestyle, I desired to find a
         career I'd love that would allow me to support myself financially.

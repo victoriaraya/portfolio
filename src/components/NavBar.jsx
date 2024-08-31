@@ -30,7 +30,7 @@ const NavBar = () => {
           </a>
         </div>
         <button
-          className="text-3xl sm:hidden focus:outline-none"
+          className="text-3xl pr-8 sm:hidden focus:outline-none"
           onClick={toggleMenu}
         >
           ☰
