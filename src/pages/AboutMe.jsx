@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <div className="min-h-screen w-full pt-0 sm:pt-6 text-white grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
-      <p className="order-2 sm:order-1 pb-2 p-2 sm:p-20 sm:pl-16 sm:pt-20 text-[23px] justify-self-center text-center sm:-mt-4 sm:-mr-4 [text-shadow:1px_1px_3px_black]">
+      <p className="order-2 sm:order-1 pb-2 p-2 sm:p-20 sm:pl-20 sm:pt-20 text-[23px] justify-self-center text-center sm:-mt-2 sm:-mr-16 [text-shadow:1px_1px_3px_black]">
         I'm a self-taught developer from California. After years of teaching
         English online while living a nomadic lifestyle, I desired to find a
         career I'd love that would allow me to support myself financially.
@@ -15,7 +15,7 @@ const AboutMe = () => {
         free time I love working out, connecting with nature, dancing, writing
         and traveling.
       </p>
-      <div className="order-1 pt-14 sm:pt-36 sm:pr-2 pb-14 sm:pb-0 sm:order-2">
+      <div className="order-1 pt-14 sm:pt-36 sm:pr-14 pb-14 sm:pb-0 sm:order-2">
         <div className="relative flex items-center justify-center">
           <img
             src="./images/me.png"

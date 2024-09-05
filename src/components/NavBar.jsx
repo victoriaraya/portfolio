@@ -36,7 +36,7 @@ const NavBar = () => {
           ☰
         </button>
 
-        <button className="z-20 text-2xl sm:pr-4 sm:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90">
+        <button className="z-30 text-2xl sm:pr-4 sm:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90">
           <GoMoon />
         </button>
       </div>

@@ -3,12 +3,11 @@ import { expertiseList } from "../expertise";
 
 const Expertise = () => {
   return (
-    <div className="h-screen w-full pt-12 sm:pt-12 px-2 gap-5 text-white flex text-2xl text-center">
-      <div>languages</div>
-      <div>frontend</div>
-      <div>backend</div>
-      <div>soft skills</div>
+    <div className="min-h-screen w-full grid grid-cols-2 grid-rows-2 sm:pt-12 px-14 pb-8 gap-x-14 gap-y-6 text-white text-2xl text-center">
       <ExpertiseTile expertise={expertiseList[0]} />
+      <ExpertiseTile expertise={expertiseList[1]} />
+      <ExpertiseTile expertise={expertiseList[2]} />
+      <ExpertiseTile expertise={expertiseList[3]} />
     </div>
   );
 };
