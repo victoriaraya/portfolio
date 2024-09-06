@@ -11,9 +11,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-fuchsia-950 p-3 sm:p-0 text-white border-b-2 sm:border-b-0 border-white relative">
+    <nav className="bg-fuchsia-950 p-3 md:p-0 text-white border-b-2 md:border-b-0 border-white relative">
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-3 z-30 sm:pt-4 sm:pl-3">
+        <div className="flex items-center gap-3 z-30 md:pt-4 sm:pl-3">
           <a
             href="https://github.com/victoriaraya"
             target="_blank"
@@ -30,21 +30,21 @@ const NavBar = () => {
           </a>
         </div>
         <button
-          className="text-3xl pr-8 sm:hidden focus:outline-none z-40"
+          className="text-3xl pr-8 md:hidden focus:outline-none z-40"
           onClick={toggleMenu}
         >
           ☰
         </button>
 
-        <button className="z-30 text-2xl sm:pr-4 sm:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90">
+        <button className="z-30 text-2xl sm:pr-4 md:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90">
           <GoMoon />
         </button>
       </div>
 
       <ul
-        className={`flex flex-col sm:flex-row gap-3 sm:gap-8 justify-center items-center text-center text-2xl font-bold bg-fuchsia-950 w-full absolute top-0 left-0 mt-14 sm:mt-0 sm:p-3 z-20 border-b-2 border-white ${
+        className={`flex flex-col md:flex-row gap-3 sm:gap-8 justify-center items-center text-center text-2xl font-bold bg-fuchsia-950 w-full absolute top-0 left-0 mt-14 md:mt-0 sm:p-3 z-20 border-b-2 border-white ${
           isOpen ? "block" : "hidden"
-        } sm:flex`}
+        } md:flex`}
       >
         <li className="hover:[text-shadow:1px_1px_3px_white]">
           <Link to="/" onClick={() => setIsOpen(false)}>

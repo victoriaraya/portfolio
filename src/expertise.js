@@ -1,6 +1,6 @@
 const expertiseList = [
   {
-    title: "Languages",
+    title: "Programming",
     subtitle: "JavaScript, Python, HTML, CSS",
     description:
       "Proficient in modern web development with a strong foundation in both Object-Oriented and Functional Programming paradigms.",
@@ -13,15 +13,15 @@ const expertiseList = [
   },
   {
     title: "Backend",
-    subtitle: "Node.js, Express, PostgreSQL, MongoDB, MySQL",
+    subtitle: "Node.js, Express, Databases",
     description:
-      "Skilled in developing scalable server-side applications and integrating APIs with secure and efficient backend services. Proficient in designing and maintaining relational and non-relational databases to support data-driven applications.",
+      "Skilled in developing server-side applications and integrating APIs with secure and efficient backend services. Proficient in designing and maintaining relational and non-relational databases to support data-driven applications.",
   },
   {
-    title: "Personality",
-    subtitle: "Communication, Adaptability, Collaboration and Prolem solving",
+    title: "Character",
+    subtitle: "Communication and Problem-Solving",
     description:
-      "Experienced in working effectively within teams and contributing to a positive, collaborative work environment. Enthusiastic about learning new technologies and frameworks, with a commitment to continuous improvement and adapting to changing project requirements.",
+      "Aptitude for working within diverse teams and contributing to a positive, collaborative work environment. Enthusiastic about developing innovative solutions and learning new technologies. Quick to adapt to changing project requirements.",
   },
 ];
 

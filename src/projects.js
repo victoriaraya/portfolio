@@ -22,7 +22,7 @@ const ProjectList = [
   {
     name: "Victoria's Shop",
     description:
-      "Victoria's Shop is an e-commerce website I designed and developed using React and Express, with Stripe integration for payment processing. This project was my first major solo endeavor, designed to enhance my skills in React, REST API design, database management, authentication, third-party API integration, and CSS. I featued products I’m actually interested in as a fun and practical way to gain experience. Throughout this project, I gained valuable insights into React, including managing context and state, integrating components effectively and linking the UI with data handling to enhance their interaction. Completing this project has equipped me with the knowledge to handle similar tasks more efficiently in the future.",
+      "Victoria's Shop is an e-commerce website I designed and developed using React and Express, with Stripe integration for payment processing. This project was my first major solo endeavor, designed to enhance my skills in React, REST API design, database management, authentication, third-party API integration, and CSS. I featured products I’m actually interested in as a fun and practical way to gain experience. Throughout this project, I gained valuable insights into React, including managing context and state, integrating components effectively and linking the UI with data handling to enhance their interaction. Completing this project has equipped me with the knowledge to handle similar tasks more efficiently in the future.",
     images: [
       "victorias-shop.mp4",
       "victoriashop1.png",
