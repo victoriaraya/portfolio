@@ -12,7 +12,7 @@ import NotFound from "./components/NotFound";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="box-border font-gruppo bg-[#b291a4]">
+      <div className="box-border font-gruppo bg-[#b291a4] dark:bg-[#4a3f47]">
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -11,9 +11,12 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="min-h-screen w-screen mt-0 sm:pt-9 px-4 sm:px-6 bg-[#b291a4] text-white text-lg sm:text-2xl flex flex-col">
+    <div className="min-h-screen w-screen mt-0 sm:pt-9 px-4 sm:px-6 bg-[#b291a4] text-white text-lg sm:text-2xl flex flex-col dark:bg-[#4a3f47] dark:text-gray-200">
       <p className="flex justify-between z-10 mb-1 sm:-mt-3 -ml-2 sm:-ml-3">
-        <Link to="/projects" className="hover:[text-shadow:1px_1px_3px_white]">
+        <Link
+          to="/projects"
+          className="hover:[text-shadow:1px_1px_3px_white] dark:hover:[text-shadow:1px_1px_3px_black]"
+        >
           Go back
         </Link>
 
@@ -38,7 +41,7 @@ const ProjectDetails = () => {
             width="600"
             height="600"
             opacity="1"
-            className="absolute mt-44 sm:mt-32 w-3/4"
+            className="absolute mt-44 sm:mt-32 w-3/4 dark:opacity-80"
           >
             <g
               strokeWidth="2"
@@ -79,7 +82,7 @@ const ProjectDetails = () => {
               </linearGradient>
             </defs>
           </svg>
-          <h1 className="absolute text-5xl text-center sm:text-8xl mt-14 sm:-mt-24 [text-shadow:2px_2px_3px_black]">
+          <h1 className="absolute text-5xl text-center sm:text-8xl mt-14 sm:-mt-24 [text-shadow:2px_2px_3px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
             {project.name}
           </h1>
         </div>
@@ -88,7 +91,7 @@ const ProjectDetails = () => {
           <span className="flex flex-wrap gap-2 sm:gap-3 justify-center">
             {project.technologies.map((tech) => (
               <span
-                className="bg-slate-300 bg-opacity-35 rounded-md p-1"
+                className="bg-slate-300 bg-opacity-35 rounded-md p-1 dark:bg-opacity-25"
                 key={tech}
               >
                 {tech}
@@ -96,7 +99,7 @@ const ProjectDetails = () => {
             ))}
           </span>
         </div>
-        <p className="col-span-2 p-3 shadow-[1px_1px_7px_7px_white] rounded-xl mt-8 mx-2 sm:mx-10 text-center">
+        <p className="col-span-2 p-3 shadow-[1px_1px_7px_7px_white] rounded-xl mt-8 mx-2 sm:mx-10 text-center dark:shadow-[1px_1px_7px_7px_gray]">
           {project.description}
         </p>
       </div>
@@ -109,7 +112,7 @@ const ProjectDetails = () => {
                   src={`/images/${image}`}
                   alt={`${project.name} page`}
                   key={idx}
-                  className="rounded-sm border-2 border-white w-full sm:w-auto"
+                  className="rounded-sm border-2 border-white w-full sm:w-auto dark:border-gray-600 dark:grayscale dark:brightness-75"
                 />
               ),
             )}
