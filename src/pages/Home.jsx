@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+import { isDark, KeepDarkMode } from "../components/DarkModeButton";
 const Home = () => {
+  useEffect(() => {
+    if (isDark) {
+      KeepDarkMode();
+    }
+  }, []);
   return (
     <div className="relative w-full h-screen">
       <video

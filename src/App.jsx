@@ -1,13 +1,13 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
-import Expertise from "./pages/Expertise";
-import Projects from "./pages/Projects";
-import ProjectDetails from "./pages/ProjectDetails";
+import NotFound from "./components/NotFound";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
-import NotFound from "./components/NotFound";
+import Expertise from "./pages/Expertise";
+import Home from "./pages/Home";
+import ProjectDetails from "./pages/ProjectDetails";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (

@@ -1,6 +1,13 @@
+import { useEffect } from "react";
+import { isDark, KeepDarkMode } from "../components/DarkModeButton";
 const AboutMe = () => {
+  useEffect(() => {
+    if (isDark) {
+      KeepDarkMode();
+    }
+  }, []);
   return (
-    <div className="min-h-screen w-full pt-0 sm:pt-6 text-white grid grid-cols-1 md:grid-cols-2 sm:gap-2">
+    <div className="min-h-screen w-full pt-0 sm:pt-6 text-white grid grid-cols-1 md:grid-cols-2 sm:gap-2 BGtoBlack">
       <p className="order-2 md:order-1 pb-4 sm:pb-2 p-2 sm:p-20 md:pl-20 md:pt-16 text-[23px] justify-self-center text-center md:-mt-2 md:-mr-6 bg-slate-300 bg-opacity-35">
         I'm a self-taught developer from California. After years of teaching
         English online while living a nomadic lifestyle, I desired to find a

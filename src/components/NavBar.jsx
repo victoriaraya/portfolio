@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { GoSun, GoMoon } from "react-icons/go";
+import { Link } from "react-router-dom";
+import DarkModeButton from "./DarkModeButton";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +10,9 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
+
   return (
-    <nav className="bg-fuchsia-950 p-3 md:p-0 text-white border-b-2 md:border-b-0 border-white relative">
+    <nav className="bg-fuchsia-950 p-3 md:p-0 text-white border-b-2 md:border-b-0 border-white relative NavBar">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-3 z-30 md:pt-4 sm:pl-3">
           <a
@@ -35,10 +36,7 @@ const NavBar = () => {
         >
           ☰
         </button>
-
-        <button className="z-30 text-2xl sm:pr-4 md:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90">
-          <GoMoon />
-        </button>
+        <DarkModeButton/>
       </div>
 
       <ul
