@@ -13,12 +13,17 @@ const ProjectTile = (props) => {
             loop
             className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
           >
-            <source src={`/images/${project.images[0]}`} type="video/mp4" />
+            <source
+              src={`/images/${project.images[0]}`}
+              type="video/mp4"
+              loading="lazy"
+            />
           </video>
         ) : (
           <img
             src={`/images/${project.images[0]}`}
             alt={`${project.name}`}
+            loading="lazy"
             className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
           />
         )}
