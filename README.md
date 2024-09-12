@@ -4,7 +4,7 @@ https://victoriaraya.com
 
 ## Description
 
-    This is my personal portfolio website that I designed and developed using React. This project showcases my skills, experience, and projects as a software developer. The site is designed to provide potential employers, clients, and collaborators with an overview of my work and get to know me a bit better.
+This is my personal portfolio website that I designed and developed using React. This project showcases my skills, experience, and projects as a software developer. The site is designed to provide potential employers, clients, and collaborators with an overview of my work and get to know me a bit better.
 
 ## Demo
 
