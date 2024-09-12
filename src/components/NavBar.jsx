@@ -1,31 +1,24 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { GoSun, GoMoon } from "react-icons/go";
+import { DarkmodeSwitch } from "./DarkmodeSwitch";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark", !isDarkMode);
-  };
-
   return (
-    <nav
-      className={`p-3 md:p-0 border-b-2 md:border-b-0 border-white relative ${isDarkMode ? "bg-[#332429]" : "bg-fuchsia-950"} ${isDarkMode ? "text-gray-200" : "text-white"}`}
-    >
+    <nav className="p-3 md:p-0 border-b-2 md:border-b-0 border-white relative text-white dark:text-gray-200 bg-fuchsia-950 dark:bg-[#332429]">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-3 z-30 md:pt-4 sm:pl-3">
           <a
             href="https://github.com/victoriaraya"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="github"
           >
             <FaGithub className="text-2xl transition-all duration-200 ease-in-out transform hover:scale-90 dark:grayscale dark:brightness-75" />
           </a>
@@ -33,6 +26,7 @@ const NavBar = () => {
             href="https://www.linkedin.com/in/victoria-raya-05a68b29a/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="linkedin"
           >
             <FaLinkedin className="text-2xl transition-all duration-200 ease-in-out transform hover:scale-90 dark:grayscale dark:brightness-75" />
           </a>
@@ -43,23 +37,13 @@ const NavBar = () => {
         >
           ☰
         </button>
-
-        <button
-          className="z-30 text-2xl sm:pr-4 md:pt-4 transition-all duration-200 ease-in-out transform hover:scale-90"
-          onClick={toggleDarkMode}
-        >
-          {isDarkMode ? (
-            <GoSun className="dark:grayscale dark:brightness-75" />
-          ) : (
-            <GoMoon />
-          )}
-        </button>
+        <DarkmodeSwitch />
       </div>
 
       <ul
-        className={`flex flex-col md:flex-row gap-3 sm:gap-8 justify-center items-center text-center text-2xl font-bold w-full absolute top-0 left-0 mt-14 md:mt-0 sm:p-3 z-20 border-b-2 ${isDarkMode ? "border-gray-200" : "border-white"} ${
+        className={`flex flex-col md:flex-row gap-3 sm:gap-8 justify-center items-center text-center text-2xl font-bold w-full absolute top-0 left-0 mt-14 md:mt-0 sm:p-3 z-20 border-b-2 border-white dark:border-gray-200 ${
           isOpen ? "block" : "hidden"
-        } md:flex ${isDarkMode ? "bg-[#332429]" : "bg-fuchsia-950"}`}
+        } md:flex bg-fuchsia-950 dark:bg-[#332429]`}
       >
         <li className="hover:[text-shadow:1px_1px_3px_white] dark:hover:[text-shadow:1px_1px_3px_black]">
           <Link to="/" onClick={() => setIsOpen(false)}>

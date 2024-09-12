@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="min-h-screen w-screen mt-0 sm:pt-9 pb-3 sm:pb-0 bg-[#b291a4] overflow-hidden dark:bg-[#4a3f47]">
+    <div className="min-h-screen w-screen mt-0 pt-2 sm:pt-9 pb-3 sm:pb-0 bg-[#b291a4] overflow-hidden dark:bg-[#4a3f47]">
       <div className="grid grid-cols-1 md:grid-cols-[.75fr_1fr] sm:gap-3 h-full w-full">
         <div className="flex flex-col text-center md:text-start pt-6 sm:pt-0 md:pl-10 lg:pl-20 px-8 md:px-0 self-center text-white text-3xl w-full md:w-[400px] md:animate-slide-right-delay dark:text-gray-200">
           <p className="w-full">
