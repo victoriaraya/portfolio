@@ -104,12 +104,12 @@ const ProjectDetails = () => {
         </p>
       </div>
       <div className="flex flex-wrap gap-4 pt-10 sm:pt-14 pb-3 sm:px-5">
-        {project.images[0].includes("jpg")
+        {project.name.includes("Email")
           ? null
-          : project.images.map((image, idx) =>
+          : Object.values(project.images).map((image, idx) =>
               idx == 0 ? null : (
                 <img
-                  src={`/images/${image}`}
+                  src={image}
                   alt={`${project.name} page`}
                   key={idx}
                   className="rounded-sm border-2 border-white w-full sm:w-auto dark:border-gray-600 dark:grayscale dark:brightness-75"

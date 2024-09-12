@@ -1,3 +1,5 @@
+import me from "/images/me.png";
+
 const AboutMe = () => {
   return (
     <div className="min-h-screen w-full pt-2 sm:pt-6 text-white grid grid-cols-1 md:grid-cols-2 sm:gap-2 dark:bg-[#4a3f47] dark:text-gray-200">
@@ -18,7 +20,7 @@ const AboutMe = () => {
       <div className="order-1 pt-14 md:pt-24 md:pr-2 pb-12 md:pb-0 md:order-2">
         <div className="relative flex items-center justify-center">
           <img
-            src="./images/me.png"
+            src={me}
             alt="Victoria"
             loading="lazy"
             className="rounded-full w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] dark:grayscale"
