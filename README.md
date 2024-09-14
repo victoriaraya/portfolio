@@ -21,7 +21,7 @@ This is my personal portfolio website that I designed and developed using React.
 
 ### Clone this repository
 
-    git clone
+    git clone https://github.com/victoriaraya/portfolio.git
 
 ### Install dependencies
 
@@ -34,3 +34,7 @@ This is my personal portfolio website that I designed and developed using React.
 ### Open the app in your browser
 
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+## Contributing
+
+Thank you for your interest! This portfolio is a personal project intended to showcase my individual skills and abilities, so I'm not accepting contributions at this time. However, feel free to explore the code, I'm always open to feedback or suggestions for improvement!
