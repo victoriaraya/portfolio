@@ -1,40 +1,5 @@
-# Portfolio
+# Portfolio (React Version)
 
-https://victoriaraya.com
+This repository contains the React version of my portfolio website. Please note that I have since converted the project to Next.js for better performance and scalability.
 
-## Description
-
-This is my personal portfolio website that I designed and developed using React. This website showcases my skills, experience, and projects as a software developer. The site is designed to provide potential employers, clients, and collaborators with an overview of my work and get to know me a bit better.
-
-It features dedicated pages for showcasing my projects and highlighting my expertise in various technologies. It also includes an About Me section that offers insight into my background, along with a contact form for easy communication. Built with a responsive design, the site provides a seamless experience across mobile devices, and includes a dark mode toggle for a personalized browsing experience.
-
-## Demo
-
-## Tech Stack
-
-- [React](https://react.dev/) - Framework
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Language
-- [Tailwind](https://tailwindcss.com/) - CSS
-- [Vercel](https://vercel.com) - Hosting
-
-## Getting Started
-
-### Clone this repository
-
-    git clone https://github.com/victoriaraya/portfolio.git
-
-### Install dependencies
-
-    npm install
-
-### Run the development server:
-
-    npm run dev
-
-### Open the app in your browser
-
-Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
-
-## Contributing
-
-Thank you for your interest! This portfolio is a personal project intended to showcase my individual skills and abilities, so I'm not accepting contributions at this time. However, feel free to explore the code, I'm always open to feedback or suggestions for improvement!
+You can find the updated Next.js version of the portfolio [here](https://github.com/victoriaraya/portfolio_nextjs).
